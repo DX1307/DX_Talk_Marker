@@ -3,6 +3,7 @@ ESX = exports['es_extended']:getSharedObject()
 local sec = 1000
 
 
+
 Citizen.CreateThread(function()
 	while true do
 		local sleepthread = 1000
