@@ -1,12 +1,7 @@
-ESX = nil
+
+ESX = exports['es_extended']:getSharedObject()
 local sec = 1000
-Citizen.CreateThread(function()
-	while ESX == nil do
-		TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-		Citizen.Wait(7)
-	end
-	Citizen.Wait(7)
-end)
+
 
 Citizen.CreateThread(function()
 	while true do
